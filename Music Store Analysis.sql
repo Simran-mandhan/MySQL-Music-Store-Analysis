@@ -133,7 +133,7 @@ inner join invoice_line il using (invoice_id)
 inner join track t using (track_id)
 inner join genre g using (genre_id)
 group by country,genre_name
-order by 2 asc, 1 desc)
+order by country asc, purchases desc)
 SELECT country, genre_name, purchases 
 FROM popular_genre 
 WHERE row_num <= 1;
