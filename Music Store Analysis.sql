@@ -40,6 +40,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 ignore 1 lines;
 
+-- Other tables were imported using table data import wizard
 
 -- Q1: Who is the senior most employee, find name and job title
 select concat(first_name, " " , last_name) as Name, title from employee
