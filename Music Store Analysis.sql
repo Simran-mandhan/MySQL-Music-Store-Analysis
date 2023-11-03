@@ -85,8 +85,8 @@ customer c inner JOIN invoice i ON i.customer_id = c.customer_id
 inner JOIN invoice_line il ON il.invoice_id = i.invoice_id
 JOIN track t ON t.track_id = il.track_id
 JOIN genre g ON g.genre_id = t.genre_id
-WHERE g.name LIKE 'Rock' and c.email like 'a%'
-ORDER BY c.email;
+WHERE g.name LIKE 'Rock'
+ORDER BY c.email desc;
 
 
 -- Q7: Let's invite the artists who have written the most rock music in our dataset. 
